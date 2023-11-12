@@ -1,0 +1,60 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+    background-color: lavender;
+    margin: 0;
+}
+
+h1{
+    margin-top: 450px;
+    margin-left: 100px;
+    font-size:85px;
+}
+
+p{
+    margin-left: 100px;
+}
+
+#color{
+    color: purple;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    margin: 0;
+}
+
+.list li a {
+    color: white;
+    text-decoration: none; /* Set the initial background color */
+    padding: 5px 10px; 
+}
+
+.list li a:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    animation: slideInFromBottom 2s ease;
+}
+
+p {
+    animation: slideInFromBottom 2s ease;
+}
